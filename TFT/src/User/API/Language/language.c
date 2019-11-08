@@ -542,7 +542,7 @@ bool isRussia(const u8 *const str)
 
 bool isArmenian(const u8 *const str)
 {
-  if(str[0]==0xD4)
+  if(str[0]>=0xD4&&str[0]<=0xD6)
   {
     if(str[1]>=0x80&&str[1]<=0xDF)
     return true;
